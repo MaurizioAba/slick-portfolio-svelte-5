@@ -1,0 +1,65 @@
+import { base } from '$app/paths';
+
+const url = (file: string) => `${base}/logos/${file}`;
+
+const asset = (lightFilename: string, darkFilename = lightFilename) => {
+	return { light: url(lightFilename), dark: url(darkFilename) };
+};
+
+const Assets = {
+	Bootstrap: asset('bootstrap.svg'),
+	FastApi: asset('fastapi'),
+	Nginx: asset('nginx.svg'),
+	Numpy: asset('numpy.svg'),
+	Pandas: asset('pandas.svg'),
+	Scrapy: asset('scrapy.png'),
+	Docker: asset('docker.svg'),
+	Csharp: asset('csharp.svg'),
+	TypeScript: asset('ts.png'),
+	VueJs: asset('vue.png'),
+	ReactJs: asset('react.svg'),
+	Kotlin: asset('kotlin.png'),
+	Python: asset('python.png'),
+	NodeJs: asset('node.png'),
+	Svelte: asset('svelte.svg'),
+	ExpressJs: asset('express.png'),
+	JavaScript: asset('js.png'),
+	Fastify: asset('fastify.svg', 'fastify-dark.png'),
+	NestJs: asset('nest.svg'),
+	SolidJs: asset('solid.svg'),
+	Electron: asset('electron.png'),
+	Flutter: asset('flutter.svg'),
+	Android: asset('android.png'),
+	Angular: asset('angular.png'),
+	PostgreSQL: asset('postgres.png'),
+	Firebase: asset('firebase.png'),
+	Sass: asset('sass.png'),
+	Unknown: asset('no-img.svg'),
+	MongoDB: asset('mongodb.svg'),
+	Redis: asset('redis.svg'),
+	Tailwind: asset('tailwind.svg'),
+	HTML: asset('html.svg'),
+	Premiere: asset('premiere.svg'),
+	Photoshop: asset('photoshop.svg'),
+	CSS: asset('css.svg'),
+	AfterEffects: asset('after-effects.svg'),
+	Illustrator: asset('illustrator.svg'),
+	Nuxt: asset('nuxt.png'),
+	Vite: asset('vite.png'),
+	Vitest: asset('vitest.svg'),
+	Unocss: asset('unocss.svg'),
+	sqlserver: asset('sqlserver.svg'),
+	python: asset('python.svg'),
+	telegram: asset('telegram.svg'),
+	Postcss: asset('postcss.svg'),
+	kennedy: asset('kennedy.png'),
+	falanto: asset('falanto.png'),
+	epicode: asset('epicode.png'),
+	nextrek: asset('nextrek.png'),
+	tryber: asset('tryber.png'),
+	m: asset('m.png'),
+	snapphoto: asset('snapphoto.png'),
+	dgarage: asset('dgarage.png'),
+};
+
+export default Assets;
