@@ -60,6 +60,7 @@ const Assets = {
 	m: asset('m.png'),
 	snapphoto: asset('snapphoto.png'),
 	dgarage: asset('dgarage.png'),
+	n8n: asset('n8n.png'),
 };
 
 export default Assets;
