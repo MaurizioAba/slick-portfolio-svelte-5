@@ -21,7 +21,7 @@ const items: Array<Project> = [
 		screenshots: [
 			{
 				label: 'screen 1',
-				src:'/screenshots/n8n_workflow.png'
+				src:'${import.meta.env.BASE_URL}screenshots/n8n_workflow.png'
 			},
 		]
 	},
