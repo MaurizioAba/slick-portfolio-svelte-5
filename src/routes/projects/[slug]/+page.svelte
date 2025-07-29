@@ -15,6 +15,7 @@
 	import { mode } from 'mode-watcher';
 
 	let { data }: { data: { item?: Project } } = $props();
+  	const baseUrl = import.meta.env.BASE_URL;
 
 	let title = $derived(`${data?.item?.name ?? 'Not Found'} - Projects`);
 	let banner = $derived(
@@ -27,6 +28,7 @@
 			data.item?.period.to
 		)}`
 	);
+	//console.log('BASE_URL:', import.meta.env.BASE_URL);
 </script>
 
 <BasePage {title}>
@@ -72,7 +74,7 @@
 				<Muted>Screenshots</Muted>
 				<div class="grid grid-cols-1 gap-2 py-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
 					{#each data.item.screenshots as img, index (index)}
-						<ScreenshotCard item={img} />
+						<ScreenshotCard item={{ ...img, src: `${baseUrl}${img.src}` }} />
 					{/each}
 				</div>
 			{/if}
