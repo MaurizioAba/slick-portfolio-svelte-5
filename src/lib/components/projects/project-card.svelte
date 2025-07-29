@@ -104,5 +104,16 @@
 				<SkillBadge {skill} />
 			{/each}
 		</div>
+		{#if project.screenshots?.length}
+			<div class="mt-4 flex flex-wrap gap-2">
+			{#each project.screenshots as screenshot (screenshot.src)}
+				<img
+				src={`${import.meta.env.BASE_URL}${screenshot.src}`}
+				alt={screenshot.label}
+				class="rounded-md max-h-40 border shadow"
+				/>
+			{/each}
+			</div>
+		{/if}
 	</CardContent>
 </FancyCard>
