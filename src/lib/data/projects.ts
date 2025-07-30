@@ -43,8 +43,8 @@ const items: Array<Project> = [
 		screenshots: [
 			{
 				label: 'screen 1',
-				src: ''
-			}
+				src:'screenshots/portfolionew.png'
+			},
 		]
 	},
 	{
@@ -61,13 +61,19 @@ const items: Array<Project> = [
 			from: new Date(2024, 1), to: new Date(2024, 3),
 		},
 		skills: getSkills('ts', 'tailwind', 'sass'),
-		type: 'Website Template'
+		type: 'Website Template',
+		screenshots: [
+			{
+				label: 'screen 1',
+				src:'screenshots/customphotocase.png'
+			},
+		]
 	},
 	{
 		slug: 'Amazon-TelegramBot',
 		color: '#f6ff00ff',
 		description:
-			'A Telegram bot that monitors Amazon for the best deals and automatically shares them to your channel. It focuses primarily on categories such as automotive, motorcycles, power tools, mechanic equipment, and tech accessories related to the world of mobility. 🚗 🏍️ 🔧 🔋',
+			'A Telegram bot that monitors Amazon for the best deals and automatically shares them to your channel. It focuses primarily on categories such as automotive, motorcycles, power tools, mechanic equipment, and tech accessories related to the world of mobility. 🚗 🏍️ 🔧 🔋 - Follow me -> https://t.me/danilogarage',
 		shortDescription:
 			'Telegram bot that monitors Amazon for the best deals. Python',
 		links: [{ to: 'https://github.com/MaurizioAba/Amazon-TelegramBot', label: 'GitHub' }],
@@ -78,6 +84,12 @@ const items: Array<Project> = [
 		},
 		skills: getSkills('python', 'telegram'),
 		type: 'Telegram Bot',
+		screenshots: [
+			{
+				label: 'screen 1',
+				src:'screenshots/botamazon.png'
+			},
+		]
 	}
 	
 ];
